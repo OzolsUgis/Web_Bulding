@@ -7,7 +7,10 @@ body{
     font: 15px/1,5 Arial, Helvetica, sans-serif;
     padding:0;
     margin:0;
-    background-color: #e5ad4a;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container{
@@ -28,6 +31,7 @@ header ul{
 
 header{
     background: #473c32;
+    opacity: 0.70;
     color: #ffffff;
     padding-top: 10px;
     min-height: 70px;
@@ -36,26 +40,29 @@ header{
 
 header #branding{
     float: left;
+    opacity: 1;
     margin-left: -20px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 header #img1{
-    height: 150px;
-    width: 150px;
+    opacity: 1;
+    height: 100px;
+    width: 120px;
 }
 
 header a{
     color: #e5ad4a;
+    opacity: 1;
     text-decoration: none;
     text-transform: uppercase;
-    font: size 16;
+    font-size: 16px;
 }
 
 header nav{
     float: right;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 header li{
@@ -70,3 +77,67 @@ header .current{
     
 }
 
+
+/* Body */
+
+#slideshow, #slider, .wrap, .slide-content {
+
+  padding-top: 10px;
+  left: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 925px;
+  height: 500px;
+  
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("img/cat1.jpg");
+}
+.slide2 {
+  background-image: url("img/cat2.jpg");
+}
+.slide3 {
+  background-image: url("img/cat3.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
