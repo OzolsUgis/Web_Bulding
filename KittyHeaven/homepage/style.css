@@ -5,8 +5,8 @@ body {
     font-size: 15px;
     line-height: 1,5;
     font: 15px/1,5 Arial, Helvetica, sans-serif;
-    padding:0;
-    margin: 0;
+    padding:0px;
+    margin: 0px;
   
 }
 
@@ -25,6 +25,24 @@ header ul{
 
 }
 
+.carousel-inner > .carousel-item > .d-block-w-100 {
+    padding: 0px;
+    margin-right: auto;
+    margin-left:260px;
+    margin-top: 50px;
+    width: 65%;
+    height:550px;
+  }
+
+  .carousel-control-prev span{
+      
+      margin-right: 0px;
+      height: 30px;
+      width: 50px;
+      
+   
+  }
+
 /* Body Header */
 
 .img{
@@ -32,7 +50,7 @@ header ul{
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 0px;
-    height: 750px;
+    height: 780px;
     
 
 }
@@ -86,81 +104,27 @@ header .current{
 }
 
 
-/* Body */
 
-#slideshow, #slider, .wrap, .slide-content {
 
-  padding-top: 10px;
-  left: 25%;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 1000px;
-  height: 500px;
-  
-}
-
-.wrap {
-  position: relative;
-}
-
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.slide1 {
-  background-image: url("img/cat1.jpg");
-}
-.slide2 {
-  background-image: url("img/cat2.jpg");
-}
-.slide3 {
-  background-image: url("img/cat3.jpg");
-}
-
-.slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-#arrow-left {
-  border-width: 30px 40px 30px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 0;
-  margin-left: 30px;
-}
-
-#arrow-right {
-  border-width: 30px 0 30px 40px;
-  border-color: transparent transparent transparent #fff;
-  right: 0;
-  margin-right: 30px;
-}
+/* Section 2 */
 
 .section2{
     border-top: #000000 3px solid;
-    margin-top: 65px;
+    margin-top: 60px;
+    text-align: center;
     
-    min-height: 100px;
+    min-height: 150px;
     background-color: #473c32;
-    color: #fff;
+    color: #e5ad4a;
     border-bottom: #000000 3px solid;
     
     
     
+}
+
+.section2 h2{
+    margin-top: 40px;
+    font-size: 50px;
 }
 
 .img2{
@@ -169,4 +133,63 @@ header .current{
     background-attachment: fixed;
     height: 750px;
 }
+/* Articles */
+
+
+
+
+
+
+
+
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    background: #473c32a6;   
+    height: 900px;
+    
+
+}
+
+.box img{
+    margin-top: 30px;
+    margin-left: 90px;
+    float: left;
+    height: 300px;
+    width:300px;
+    
+}
+
+.box h3{
+    color:  #e5ad4a;
+    float: left;  
+    font-size: 40px;
+  
+    margin-left: 10px;
+    font-weight: 700;
+}
+#funny{
+    margin-top: 10px;
+    margin-left: 140px;
+    font-weight: 700;
+}
+
+#expensive{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#famous{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.box p{
+    color:  #e5ad4a;
+    float: left;  
+}
+
+  
+
 
