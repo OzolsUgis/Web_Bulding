@@ -99,7 +99,7 @@ header a{
 }
 
 header a:hover{
-    text-transform: uppercase;
+    font-weight: bold;
     text-decoration: none;
     color: #e5ad4a;
 }
