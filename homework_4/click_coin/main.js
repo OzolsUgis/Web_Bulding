@@ -3,6 +3,9 @@ $(function(){
     var coins = 0;
     var smallUpgrade = 0;
     var bigUpgrade = 0;
+    var smallUpgradeCounter = 0;
+    var bigUpgradeConter = 0;
+    var smallUpgradePrice = 10;
     
 
     setInterval(function(){
@@ -19,10 +22,16 @@ $(function(){
     $('#click-me').click(function(){ coins += 1 });
 
     $('#small-upgrade').click(function(){ 
-        if(coins >= 10){
+
+    
+        if(coins >= smallUpgradePrice)
+        {
             smallUpgrade += 1;
-            coins -=10;
-        
+            coins -=smallUpgradePrice;
+            var nextPrice = smallUpgradePrice+(smallUpgradePrice * 0.1);
+            smallUpgradeCounter++;
+            $('.small-upgrade-counter').html('1x upgrade bought : ' + nextPrice);
+            
 
         }});
 
@@ -30,7 +39,10 @@ $(function(){
         if(coins >= 90){
             bigUpgrade += 10;
              coins -=90;
+
+             bigUpgradeConter++;
             
+            $('.big-update-counter').html('10x upgrade bought : ' + bigUpgradeConter);
     
         }});
          
